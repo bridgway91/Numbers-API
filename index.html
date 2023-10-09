@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Save the Date</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section>
+			<h1>Save The Date!</h1>
+			<form>
+				<label for="date"></label>
+				<input type="date" name="date" id="date" required>
+				<label for="reason"></label>
+				<input type="text" name="reason" id="reason" placeholder="Reason">
+				<button type="button" name="button">Save Date</button>
+			</form>
+		</section>
+		<section>
+			<h2>Itinerary</h2>
+			<span>saved in local storage</span>
+			<table>
+				<thead>
+					<tr>
+						<td id="date">Date</td>
+						<td id="expl">Reason</td>
+						<td id="fact">Did you know...?</td>
+					</tr>
+				</thead>
+				<tbody id="savedDates">
+					<tr>
+						<td class="date">test date</td>
+						<td class="expl">test expl</td>
+						<td class="fact">test fact</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
