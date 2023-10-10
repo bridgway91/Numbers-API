@@ -1,5 +1,5 @@
-document.querySelector('button').addEventListener('click', addToLocal);
-
+document.getElementById('save').addEventListener('click', addToLocal);
+document.getElementById('clear').addEventListener('click', clearLocal);
 buildTable();
 
 function addToLocal(){
@@ -80,3 +80,8 @@ function strToDate(str) { // input is 8 digit string in form of YYYYMMDD
 
   return `${month} ${day}, ${year}`;
 };
+
+function clearLocal() {
+  localStorage.clear();
+  buildTable();
+}
